@@ -1,0 +1,23 @@
+query GetUserRoleMenu($providerId: String!, $providerUserId: String!) {
+    data: local_my_findFirstUser(
+      where: { providerId: {equals: $providerId}, providerUserId: {equals: $providerUserId }}
+    ) {
+      roles: Role {
+        id
+        desc
+        code
+        menus: Menu {
+          icon
+          id
+          label
+          level
+          parentId
+          path
+          sort
+        }
+      }
+      avatarUrl
+      id
+      name
+    }
+  }

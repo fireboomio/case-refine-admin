@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="54px" viewBox="0 0 39 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>查询</title>
+    <defs>
+        <linearGradient x1="0%" y1="87.3963262%" x2="100%" y2="1.94156094%" id="linearGradient-1">
+            <stop stop-color="#FBA54A" offset="0%"></stop>
+            <stop stop-color="#FEC748" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-22.2%" y="-100.0%" width="144.4%" height="300.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="1.55670124e-13%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.846864073" offset="0%"></stop>
+            <stop stop-color="#FEDF97" offset="84.58552%"></stop>
+            <stop stop-color="#FEC748" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-164.000000, -18.000000)">
+            <g id="查询" transform="translate(167.000000, 18.000000)">
+                <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="33.66" height="33" rx="10"></rect>
+                <ellipse id="椭圆形" fill="#FBAB49" opacity="0.333031064" filter="url(#filter-2)" cx="16.5" cy="45" rx="13.5" ry="3"></ellipse>
+                <path d="M15.7633925,8.13498592 C19.6293858,8.13498592 22.7633925,11.2689927 22.7633925,15.1349859 C22.7633925,16.7766523 22.1982635,18.2863258 21.2519337,19.4800782 L25.3017975,24.491089 C25.7295483,25.0203672 25.6472442,25.7961925 25.117966,26.2239434 C25.1074782,26.2324194 25.0968519,26.2407227 25.0860914,26.24885 C24.5196148,26.6767031 23.7158708,26.5780706 23.2696538,26.0259433 L19.3338233,21.157218 C18.2884606,21.7783243 17.0675779,22.1349859 15.7633925,22.1349859 C11.8973993,22.1349859 8.7633925,19.0009792 8.7633925,15.1349859 C8.7633925,11.2689927 11.8973993,8.13498592 15.7633925,8.13498592 Z" id="形状结合" fill="url(#linearGradient-3)" transform="translate(17.169539, 17.324863) rotate(-4.000000) translate(-17.169539, -17.324863) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

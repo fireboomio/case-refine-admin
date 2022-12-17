@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>文件夹</title>
+    <defs>
+        <linearGradient x1="46.6947535%" y1="100%" x2="46.6947535%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFB047" offset="0%"></stop>
+            <stop stop-color="#FFC157" offset="19.4630549%"></stop>
+            <stop stop-color="#FFCB60" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="概览—钩子编辑" transform="translate(-257.000000, -202.000000)">
+            <g id="编组-11" transform="translate(243.000000, 117.000000)">
+                <g id="文件夹" transform="translate(14.000000, 85.000000)">
+                    <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+                    <path d="M1.15810045,0.823916797 L4.4926226,0.823916797 C4.78427729,0.823916797 5.03368749,1.03364606 5.08372602,1.32097619 L5.32497723,2.70628362 C5.35833625,2.89783703 5.52460971,3.03765654 5.71904617,3.03765654 L10.9581004,3.03765654 C11.2894713,3.03765654 11.5581004,3.3062857 11.5581004,3.63765657 L11.5581004,10.2239168 C11.5581004,10.5552876 11.2894713,10.8239168 10.9581004,10.8239168 L1.15810045,10.8239168 C0.826729588,10.8239168 0.558100427,10.5552876 0.558100427,10.2239168 L0.558100427,1.42391682 C0.558100427,1.09254596 0.826729588,0.823916797 1.15810045,0.823916797 Z" id="矩形" fill="url(#linearGradient-1)"></path>
+                    <line x1="3.18125628" y1="8.39033116" x2="8.97202453" y2="8.39033116" id="路径-2" stroke="#FFFFFF" stroke-width="0.5"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

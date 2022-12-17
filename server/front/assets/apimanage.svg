@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>API-选中</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B0B4BF" offset="0%"></stop>
+            <stop stop-color="#787D8B" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="26" height="26" rx="6"></rect>
+        <filter x="-26.9%" y="-19.2%" width="153.8%" height="153.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.593658482   0 0 0 0 0.621895856   0 0 0 0 0.687783062  0 0 0 0.340854458 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#B0A5A6" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#94888A" offset="50.3107779%"></stop>
+            <stop stop-color="#786C6D" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-5">
+            <stop stop-color="#FFAC94" offset="0%"></stop>
+            <stop stop-color="#EE646D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-77.000000, -252.000000)">
+            <g id="编组" transform="translate(81.000000, 254.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <rect stroke="url(#linearGradient-1)" stroke-width="0.5" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.25" y="0.25" width="25.5" height="25.5" rx="6"></rect>
+                </g>
+                <line x1="3.2" y1="25.65" x2="22.45" y2="25.65" id="Path-2" stroke="url(#linearGradient-4)" stroke-width="0.5" fill-rule="nonzero"></line>
+                <g id="API-选中" transform="translate(3.000000, 3.000000)">
+                    <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="20" height="20"></rect>
+                    <path d="M14.5336537,13.2311579 C16.7427927,13.2311579 18.5336537,11.4402969 18.5336537,9.23115789 C18.5336537,7.0220189 16.7427927,5.23115789 14.5336537,5.23115789 C12.3245147,5.23115789 10.5336537,7.0220189 10.5336537,9.23115789 C10.5336537,11.4402969 12.3245147,13.2311579 14.5336537,13.2311579 Z" id="Oval" stroke="#E92E5E" stroke-width="1.5" fill="#E92E5E" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15.7337433,8.96396933 C15.6492021,5.84486168 13.0855383,3.33333333 9.94641428,3.33333333 C8.5043086,3.33333333 7.12257413,3.86686302 6.05569379,4.83555957 C5.1364114,5.67022917 4.51522529,6.76761738 4.27198588,7.96977794 C3.40294122,8.15665656 2.60970074,8.60618217 1.99596256,9.26779479 C1.24622802,10.0762176 0.833333333,11.1288824 0.833333333,12.2319998 C0.833333333,14.6361061 2.78920304,16.5919758 5.1933093,16.5919758 C5.19900267,16.5919758 5.20462442,16.5919758 5.20874227,16.5918325 L15.3194879,16.5917251 C15.3272581,16.5919758 15.3349925,16.5919758 15.3427627,16.5919758 C17.4512792,16.5919758 19.1666667,14.8765883 19.1666667,12.7680718 C19.1666667,10.7914696 17.6593916,9.16037271 15.7337433,8.96396933 Z" id="Shape" fill="url(#linearGradient-5)"></path>
+                    <text id="API" font-family="PingFangSC-Regular, PingFang SC" font-size="4" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="6.88633333" y="12.3333333">API</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+query GetUserRoles($userId: Int!) {
+  data: local_my_findFirstUser(where: {id: {equals: $userId}}) @transform(get: "Role") {
+    Role {
+      code
+      desc
+      id
+    }
+  }
+}

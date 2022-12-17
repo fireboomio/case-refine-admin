@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>视图</title>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="概览—设置-全局设置" transform="translate(-1011.000000, -659.000000)">
+            <g id="编组" transform="translate(1011.000000, 659.000000)">
+                <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+                <rect id="矩形" stroke="#E92E5E" stroke-width="0.5" x="0.25" y="0.795454545" width="11.5" height="10.4090909" rx="1"></rect>
+                <g id="编组-4" transform="translate(2.000000, 4.000000)">
+                    <path d="M-0.813469349,3.16641053 L0.96267717,1.06626258 C1.06253596,0.948187731 1.23920607,0.933420698 1.35728091,1.03327948 C1.36917351,1.04333734 1.38020615,1.05436998 1.39026401,1.06626258 L3.16641053,3.16641053 L3.16641053,3.16641053" id="路径" stroke="#E92E5E" stroke-width="0.5" stroke-linecap="round" transform="translate(1.176471, 1.989940) scale(-1, 1) rotate(90.000000) translate(-1.176471, -1.989940) "></path>
+                    <path d="M4.83358947,3.16641053 L6.60973599,1.06626258 C6.70959478,0.948187731 6.88626489,0.933420698 7.00433974,1.03327948 C7.01623233,1.04333734 7.02726497,1.05436998 7.03732283,1.06626258 L8.81346935,3.16641053 L8.81346935,3.16641053" id="路径" stroke="#E92E5E" stroke-width="0.5" stroke-linecap="round" transform="translate(6.823529, 1.989940) rotate(90.000000) translate(-6.823529, -1.989940) "></path>
+                    <circle id="椭圆形" fill="#E92E5E" cx="4.33333333" cy="3.66666667" r="1"></circle>
+                    <line x1="4.3299552" y1="0.298756817" x2="3.10923645" y2="3.73298695" id="路径-77" stroke="#E92E5E" stroke-width="0.5" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

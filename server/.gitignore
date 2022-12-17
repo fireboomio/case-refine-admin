@@ -1,0 +1,19 @@
+.idea/
+.vscode/
+.history
+./main
+*.out
+*.exe
+main
+*wdg.txt
+
+node_modules
+generated/
+log/*.txt
+
+yarn.lock
+package-lock.json
+
+# bin files
+wunderctl
+fireboom

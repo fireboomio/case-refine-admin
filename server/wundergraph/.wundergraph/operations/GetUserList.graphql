@@ -1,0 +1,21 @@
+query GetUserList(
+  $take: Int = 10
+  $skip: Int = 0
+  $orderBy: [local_my_UserOrderByWithRelationInput]
+  $query: local_my_UserWhereInput
+) {
+  data: local_my_findManyUser(skip: $skip, take: $take, where: { AND: $query }, orderBy: $orderBy) {
+    id
+    name
+    createdAt
+    avatarUrl
+    provider
+    providerId
+    providerUserId
+  }
+  total: local_my_aggregateUser(where: { AND: $query }) @transform(get: "_count.id") {
+    _count {
+      id
+    }
+  }
+}

@@ -1,0 +1,7 @@
+query GetRoleList {
+  data: local_my_findManyRole {
+    id
+    code
+    desc
+  }
+}

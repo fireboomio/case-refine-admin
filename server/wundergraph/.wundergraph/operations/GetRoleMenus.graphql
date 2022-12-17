@@ -1,0 +1,13 @@
+query GetRoleMenus($roleCode: String!) {
+  data: local_my_findFirstRole(where: {code: {equals: $roleCode}}) @transform(get: "Menu") {
+    Menu {
+      sort
+      path
+      parentId
+      level
+      label
+      id
+      icon
+    }
+  }
+}

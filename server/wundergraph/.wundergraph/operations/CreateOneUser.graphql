@@ -1,0 +1,5 @@
+mutation CreateOneUser($data: local_my_UserCreateInput!) {
+    local_my_createOneUser(data: $data) {
+      id
+    }
+  }

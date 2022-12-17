@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/json-formatter-js@2.3.4/dist/json-formatter.umd.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.zhimg.com/vue@3.2.45/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+    <style>
+      [v-cloak] {
+        display: none !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .requests {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #e8e8e8;
+        table-layout: fixed;
+        font-size: 12px;
+      }
+      .requests thead {
+        background: #f1f3f4;
+        text-align: left;
+        height: 28px;
+      }
+      th,
+      td {
+        padding: 4px 6px;
+        border-right: 1px solid #e8e8e8;
+        white-space: break-spaces;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: default;
+      }
+      th:last-child,
+      td:last-child {
+        border-right: none;
+      }
+      td {
+        border-top: 1px solid #e8e8e8;
+      }
+      td:last-child > .json-formatter-row {
+        overflow-x: auto;
+      }
+
+      .tbody .active td {
+        background: #3871e0 !important;
+        color: white;
+      }
+      .tbody tr:nth-child(2n + 1) > td {
+        background: #f5f5f5;
+      }
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .container {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        align-items: flex-start;
+      }
+      .requests {
+        flex: 1;
+        min-width: 0;
+        overflow-y: auto;
+      }
+      .panel {
+        font-size: 12px;
+        flex: 0 0 70%;
+        overflow-y: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #cacdd1;
+      }
+      .panel-head {
+        flex: 0 0 auto;
+        height: 28px;
+        box-sizing: border-box;
+        background: #f1f3f4;
+      }
+      .panel-head > span {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 6px;
+        line-height: 27px;
+        position: relative;
+        border-bottom: 1px solid transparent;
+      }
+      .panel-head > span:hover {
+        background: #dfe1e5;
+      }
+      .panel-head > span.active {
+        border-bottom: 1px solid #3871e0;
+      }
+      .panel-body {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+      }
+      .panel-body .block {
+        padding: 6px 12px;
+      }
+      .panel-body .block .block-title {
+        font-weight: bold;
+        line-height: 20px;
+      }
+      .panel-body .block .key {
+        line-height: 20px;
+        color: #606367;
+        font-weight: 500;
+      }
+      .panel-body .block .value {
+        line-height: 20px;
+        color: #323941;
+        padding-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="frame" style="height: 0; border: 0; display: block"></iframe>
+    <div id="app" class="app" v-cloak>
+      {{warnMsg}}
+      <div class="container">
+        <table class="requests">
+          <thead>
+            <tr>
+              <th>名称</th>
+              <th v-if="current===null">方法</th>
+              <th v-if="current===null">状态</th>
+              <th v-if="current===null">时间</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr
+              v-for="item,index in list"
+              :class="current===index?'active':''"
+              @click="current=index"
+            >
+              <td :title="item.url">{{item.url}}</td>
+              <td v-if="current===null" :title="item.method">
+                {{item.method}}
+              </td>
+              <td v-if="current===null" :title="item.status">
+                {{item.status}}
+              </td>
+              <td v-if="current===null" :title="item.duration">
+                {{item.duration?(item.duration+'ms'):''}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="panel" v-if="current!==null">
+          <div class="panel-head">
+            <span @click="current=null">x</span>
+            <span @click="tab=1" :class="tab===1?'active':''">标头</span>
+            <span @click="tab=2" :class="tab===2?'active':''">载荷</span>
+            <span @click="tab=3" :class="tab===3?'active':''">响应</span>
+          </div>
+          <div v-if="tab===1" class="panel-body">
+            <div class="block">
+              <div class="block-head">常规</div>
+              <div class="row">
+                <span class="key">请求地址</span
+                ><span class="value">{{list[current].url}}</span>
+              </div>
+              <div class="row">
+                <span class="key">请求方法</span
+                ><span class="value">{{list[current].method}}</span>
+              </div>
+              <div class="row">
+                <span class="key">状态代码</span
+                ><span class="value">{{list[current].status}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            v-if="tab===2 || tab===3"
+            class="panel-body"
+            id="json-container"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module">
+    const url = window.location.href;
+    const frame = document.getElementById('frame');
+    const $tbody = document.querySelector('.tbody');
+    import { createApp } from 'vue';
+
+    const app = createApp({
+      data() {
+        return {
+          warnMsg: '请勿关闭当前窗口',
+          list: [],
+          current: null,
+          tab: 1,
+        };
+      },
+      watch: {
+        current: 'checkJson',
+        tab: 'checkJson',
+      },
+      methods: {
+        checkJson() {
+          console.log('checkJson');
+          setTimeout(() => {
+            const $el = document.querySelector('#json-container');
+            while ($el.firstElementChild) {
+              $el.removeChild($el.firstElementChild);
+            }
+            if (this.tab === 2) {
+              $el.innerHtml = '';
+              const formatter = new JSONFormatter(this.list[this.current].body)
+              formatter.openAtDepth(10)
+              $el.appendChild(formatter.render()
+              );
+            } else if (this.tab === 3) {
+              const formatter = new JSONFormatter(this.list[this.current].response)
+              formatter.openAtDepth(10)
+              $el.appendChild(formatter.render()
+              );
+            }
+          });
+        },
+      },
+      mounted() {
+        window.addEventListener('message', async (e) => {
+          const { type, ...args } = e.data;
+          if (type === 'warnMsg') {
+            this.warnMsg = args.msg
+          } else if (type === 'request') {
+            const currentIndex = this.list.length;
+            try {
+              const newItem = {
+                url: args.url,
+                method: args.method,
+                status: 'loading',
+                body: args.body,
+                response: '',
+              };
+              try {
+                newItem.body = JSON.parse(newItem.body);
+              } catch (e) {}
+
+              this.list.push(newItem);
+              const start = Date.now();
+              const result = await fetch(
+                args.url +
+                  (args.query
+                    ? '?' +
+                      Object.keys(args.query)
+                        .map((k) => k + '=' + args.query[k])
+                        .join('&')
+                    : ''),
+                {
+                  method: args.method,
+                  body:
+                    args.method.toLowerCase() === 'get' ? undefined : args.body,
+                  headers: {
+                    'Content-Type': 'application/json;charset=utf-8',
+                  },
+                }
+              ).then((res) => {
+                console.log(res,'res')
+                this.list[currentIndex].status = res.status || 'fail';
+                this.list[currentIndex].duration = Date.now() - start;
+                return res.json();
+              });
+
+              this.list[currentIndex].response = result;
+
+              frame.contentWindow.postMessage({
+                type: 'result',
+                result,
+                url: args.url,
+              });
+              if (result) {
+                // $tr.querySelector('td:last-child').appendChild(new JSONFormatter(result).render());
+              }
+            } catch (error) {
+              this.list[currentIndex].status = 'fail';
+              console.error(e);
+              frame.contentWindow.postMessage({ type: 'error', error });
+            }
+          }
+        });
+      },
+    }).mount('#app');
+
+    frame.contentWindow.document
+      .write(`<script>const ws = new WebSocket('ws://localhost:9123/ws');
+      ws.onopen = function () {
+        ws.send('hook:ready');
+      };
+      ws.onmessage = async function (e) {
+        console.log(e)
+        try {
+          const data = JSON.parse(e.data)
+          const { channel, ...args } = data
+          if (channel === 'hook:request') {
+            window.parent.postMessage({ type: 'request', ...args })
+          }
+        } catch(e) {
+          console.error(e)
+        }
+      };
+      ws.onclose = (e) => {
+        // The connection was closed abnormally, e.g., without sending or receiving a Close control frame
+        if (e.code === 1006) {
+          alert('连接被关闭，请勿打开多个调试窗口并保证fireboom服务打开')
+          window.parent.postMessage({ type: 'warnMsg',msg: '连接被关闭，请勿打开多个调试窗口并保证fireboom服务打开' })
+        }
+      }
+      window.addEventListener('message', e => {
+        const { type, result, url, error } = e.data
+        if (type === 'result') {
+          ws.send(JSON.stringify({ channel: 'hook:result', url, result }))
+        } else if (type === 'error') {
+          ws.send(JSON.stringify({ channel: 'hook:error', error: e }))
+        }
+      })
+      <\/script>`);
+  </script>
+</html>

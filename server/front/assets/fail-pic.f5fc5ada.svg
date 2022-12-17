@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="110px" viewBox="0 0 118 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>失败-大</title>
+    <g id="失败-大" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="118" height="110"></rect>
+        <circle id="椭圆形" fill="#F21212" cx="47" cy="62" r="44"></circle>
+        <line x1="47" y1="37.4349202" x2="47" y2="86.2943864" id="路径-53" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" transform="translate(47.000000, 61.864653) rotate(-45.000000) translate(-47.000000, -61.864653) "></line>
+        <line x1="47" y1="37.4349202" x2="47" y2="86.2943864" id="路径-53" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" transform="translate(47.000000, 61.864653) scale(-1, 1) rotate(-45.000000) translate(-47.000000, -61.864653) "></line>
+        <line x1="90.6023506" y1="14.0928272" x2="95.0903161" y2="8.15462162" id="路径-68" stroke="#F21212" stroke-width="4" stroke-linecap="round"></line>
+        <line x1="99.2984344" y1="24.9171621" x2="112" y2="18" id="路径-71" stroke="#F21212" stroke-width="4" stroke-linecap="round"></line>
+        <line x1="101.804674" y1="37.0965246" x2="109.473811" y2="37.0965246" id="路径-74" stroke="#F21212" stroke-width="4" stroke-linecap="round"></line>
+    </g>
+</svg>

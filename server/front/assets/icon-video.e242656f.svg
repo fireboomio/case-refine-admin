@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>视频</title>
+    <defs>
+        <path d="M0.300000012,0 L13.7,0 C13.8656854,8.52513428e-16 14,0.13431458 14,0.300000012 L14,2.57156841 L14,2.57156841 L0,2.57156841 L0,0.300000012 C-7.58017646e-17,0.13431458 0.13431458,3.043592e-17 0.300000012,0 Z" id="path-1"></path>
+        <path d="M0,4.57156841 L14,4.57156841 L14,12.5 C14,12.7761424 13.7761424,13 13.5,13 L0.5,13 C0.223857625,13 2.46789328e-16,12.7761424 0,12.5 L0,4.57156841 L0,4.57156841 Z" id="path-3"></path>
+    </defs>
+    <g id="视频" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+        <g id="路径-2" transform="translate(0.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="蒙版" fill="#0D0D0D" xlink:href="#path-1"></use>
+            <line x1="1" y1="4.06684814" x2="3.09402662" y2="1.07628868" stroke="#FFFFFF" mask="url(#mask-2)"></line>
+            <line x1="1" y1="1.65052538" x2="3.09402662" y2="-1.34003408" stroke="#FFFFFF" mask="url(#mask-2)" transform="translate(2.047013, 0.155246) scale(1, -1) translate(-2.047013, -0.155246) "></line>
+            <line x1="4" y1="4.06684814" x2="6.09402662" y2="1.07628868" stroke="#FFFFFF" mask="url(#mask-2)"></line>
+            <line x1="4" y1="1.65052538" x2="6.09402662" y2="-1.34003408" stroke="#FFFFFF" mask="url(#mask-2)" transform="translate(5.047013, 0.155246) scale(1, -1) translate(-5.047013, -0.155246) "></line>
+            <line x1="7" y1="4.06684814" x2="9.09402662" y2="1.07628868" stroke="#FFFFFF" mask="url(#mask-2)"></line>
+            <line x1="7" y1="1.65052538" x2="9.09402662" y2="-1.34003408" stroke="#FFFFFF" mask="url(#mask-2)" transform="translate(8.047013, 0.155246) scale(1, -1) translate(-8.047013, -0.155246) "></line>
+            <line x1="10" y1="4.06684814" x2="12.0940266" y2="1.07628868" stroke="#FFFFFF" mask="url(#mask-2)"></line>
+            <line x1="10" y1="1.65052538" x2="12.0940266" y2="-1.34003408" stroke="#FFFFFF" mask="url(#mask-2)" transform="translate(11.047013, 0.155246) scale(1, -1) translate(-11.047013, -0.155246) "></line>
+        </g>
+        <mask id="mask-4" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <use id="蒙版" fill="#46D1D7" xlink:href="#path-3"></use>
+        <path d="M7.84551157,6.87808975 L10.0657634,10.6842358 C10.1770755,10.8750566 10.112621,11.1199836 9.92180027,11.2312958 C9.86062585,11.2669808 9.79107371,11.2857842 9.72025186,11.2857842 L5.27974814,11.2857842 C5.05883424,11.2857842 4.87974814,11.1066981 4.87974814,10.8857842 C4.87974814,10.8149623 4.8985515,10.7454102 4.93423658,10.6842358 L7.15448843,6.87808975 C7.26580055,6.68726898 7.51072764,6.62281448 7.70154841,6.73412659 C7.76114987,6.76889411 7.81074405,6.81848829 7.84551157,6.87808975 Z" id="三角形" fill="#FFFFFF" mask="url(#mask-4)" transform="translate(7.500000, 8.785784) rotate(90.000000) translate(-7.500000, -8.785784) "></path>
+    </g>
+</svg>

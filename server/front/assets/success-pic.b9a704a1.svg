@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="110px" viewBox="0 0 118 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>完成-大</title>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="完成-大">
+            <rect id="矩形" x="0" y="0" width="118" height="110"></rect>
+            <circle id="椭圆形" fill="#40CD88" cx="47" cy="62" r="44"></circle>
+            <path d="M70.3910126,51.5225744 C71.3740532,50.645082 73.1845453,50.641452 73.8109951,51.5225744 C74.437445,52.4036969 74.7218666,54.1497132 72.2462903,56.0627886 L72.1368733,56.1667444 L45.2269674,80.1873601 C43.9612082,81.317216 42.0352172,81.2573366 40.8425967,80.0798814 L40.7218954,79.954092 L27.7287968,65.6614682 C25.7138155,63.6408671 26.3866824,61.8316003 27.344855,60.9394315 C28.3030275,60.0472627 29.4626205,59.960646 30.3590412,60.8310016 L30.4639558,60.9394315 L43.1229174,73.1456236 L70.3910126,51.5225744 Z" id="路径-41" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <line x1="90.6023506" y1="14.0928272" x2="95.0903161" y2="8.15462162" id="路径-68" stroke="#40CD88" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="99.2984344" y1="24.9171621" x2="112" y2="18" id="路径-71" stroke="#40CD88" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="101.804674" y1="37.0965246" x2="109.473811" y2="37.0965246" id="路径-74" stroke="#40CD88" stroke-width="4" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

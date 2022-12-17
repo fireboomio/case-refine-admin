@@ -1,0 +1,9 @@
+query GetMenuList {
+  data: local_my_findManyMenu {
+    id
+    label
+    path
+    sort
+    parentId
+  }
+}

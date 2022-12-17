@@ -1,0 +1,13 @@
+query GetRoleUsers($roleCode: String!) {
+  data: local_my_findFirstRole(where: {code: {equals: $roleCode}}) @transform(get: "User") {
+    User {
+      id
+      name
+      provider
+      providerId
+      providerUserId
+      avatarUrl
+      createdAt
+    }
+  }
+}

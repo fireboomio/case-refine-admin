@@ -1,0 +1,12 @@
+[
+ {
+  "authSupplier": "openid",
+  "config": {"id":"authing","clientId":"62a32077f02e938636734416","clientSecret":"b88fbfeecbf60d40b384d7ea73c16e25","issuer":"https://shaoxiong.authing.cn/oidc","discoveryURL":"https://shaoxiong.authing.cn/oidc/.well-known/openid-configuration","jwks":0,"jwksJSON":"","jwksURL":"https://shaoxiong.authing.cn/oidc/.well-known/jwks.json","userInfoEndpoint":"https://shaoxiong.authing.cn/me","userInfoCacheTtlSeconds":0},
+  "createTime": "",
+  "id": 3,
+  "isDel": 0,
+  "name": "authing",
+  "switchState": ["cookieBased","tokenBased"],
+  "updateTime": "2022-12-12 15:59:11"
+ }
+ ]

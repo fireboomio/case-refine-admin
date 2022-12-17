@@ -1,0 +1,8 @@
+mutation UpdateOneMenu($id: Int!, $sort: Int, $path: String, $level: Int, $label: String, $icon: String) {
+  data: local_my_updateOneMenu(
+    data: {sort: {set: $sort}, path: {set: $path}, level: {set: $level}, label: {set: $label}, icon: {set: $icon}}
+    where: {id: $id}
+  ) {
+    id
+  }
+}

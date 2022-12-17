@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>其他-外部源</title>
+    <g id="其他-外部源" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#FF8F47" fill-rule="nonzero" x="0" y="0" width="12" height="12" rx="2"></rect>
+        <g id="编组" transform="translate(2.553010, 2.572899)" stroke-width="0.5">
+            <path d="M6.271,0.25 L6.75,5.07658393 L0.729,5.55558393 L0.25,0.729 L6.271,0.25 Z" id="矩形" stroke="#FFFFFF" fill="#FFFFFF"></path>
+            <line x1="0.00564255144" y1="6.8797532" x2="7" y2="6.8797532" id="路径-2" stroke="#FFFFFF" fill="#EFF0F3"></line>
+            <line x1="3.97036285" y1="1.91395377" x2="3.19167227" y2="4.09104774" id="路径-3" stroke="#FF8F47"></line>
+            <path d="M4.47952825,3.70250075 L5.45297406,2.45053446 C5.5024008,2.38696584 5.59400164,2.37550157 5.65757026,2.42492831 C5.66713657,2.43236644 5.67573828,2.44096815 5.68317641,2.45053446 L6.65662222,3.70250075 L6.65662222,3.70250075" id="路径" stroke="#FF8F47" transform="translate(5.568075, 3.002501) rotate(90.000000) translate(-5.568075, -3.002501) "></path>
+            <path d="M0.68400803,3.70250075 L1.65745384,2.45053446 C1.70688058,2.38696584 1.79848142,2.37550157 1.86205004,2.42492831 C1.87161635,2.43236644 1.88021806,2.44096815 1.88765619,2.45053446 L2.861102,3.70250075 L2.861102,3.70250075" id="路径" stroke="#FF8F47" transform="translate(1.772555, 3.002501) scale(-1, 1) rotate(90.000000) translate(-1.772555, -3.002501) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "global": {
+    "onRequest": "import { HttpTransportHookRequest, SKIP, CANCEL } from 'generated/fireboom.hooks'\nimport type { WunderGraphRequest } from 'fireboom-wundersdk'\n\nexport default async function onOriginRequest(hook: HttpTransportHookRequest) : Promise<WunderGraphRequest | SKIP | CANCEL>{\n\t// TODO: 在此处添加代码\n\treturn hook.request\n}",
+    "onResponse": "import { HttpTransportHookRequestWithResponse, SKIP, CANCEL } from 'generated/fireboom.hooks'\nimport type { WunderGraphResponse } from 'fireboom-wundersdk'\n\nexport default async function onOriginResponse(hook: HttpTransportHookRequestWithResponse) : Promise<WunderGraphResponse | SKIP | CANCEL>{\n\t// TODO: 在此处添加代码\n\treturn hook.response\n}"
+  },
+  "auth": {
+    "postAuthentication": "import { AuthenticationHookRequest } from 'generated/fireboom.hooks'\n\nexport default async function postAuthentication(hook: AuthenticationHookRequest) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
+    "mutatingPostAuthentication": "import { AuthenticationHookRequest, AuthenticationResponse } from 'generated/fireboom.hooks'\n\nexport default async function mutatingPostAuthentication(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse>{\n\t// TODO: 在此处添加代码\n\treturn {\n\t\tstatus:'deny',\n\t\tmessage: 'string'\n\t}\n}",
+    "revalidate": "import { AuthenticationHookRequest, AuthenticationResponse } from 'generated/fireboom.hooks'\n\nexport default async function revalidate(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse>{\n\t// TODO: 在此处添加代码\n\treturn {\n\t\tstatus:'deny',\n\t\tmessage: 'string'\n\t}\n}",
+    "postLogout": "import { AuthenticationHookRequest, AuthenticationResponse } from 'generated/fireboom.hooks'\n\nexport default async function postLogout(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse>{\n\t// TODO: 在此处添加代码\n\treturn {\n\t\tstatus:'deny',\n\t\tmessage: 'string'\n\t}\n}"
+  },
+  "hook": {
+    "WithInput": {
+      "mockResolve": "import { HookRequestWithInput } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input, $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function mockResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input>)\n  //: Promise<$HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n}",
+      "preResolve": "import { HookRequestWithInput } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input } from 'generated/models'\n\nexport default async function preResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input>) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
+      "mutatingPreResolve": "import { HookRequestWithInput } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input } from 'generated/models'\n\nexport default async function mutatingPreResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input>) : Promise<Injected$HOOK_NAME$Input>{\n\t// TODO: 在此处添加代码\n\treturn hook.input\n}",
+      "postResolve": "import { HookRequestWithInput, HookRequestWithResponse } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input, $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function postResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input> & HookRequestWithResponse<$HOOK_NAME$Response>) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
+      "customResolve": "import { HookRequestWithInput } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input, $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function customResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input>)\n  //: Promise<void | $HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n}",
+      "mutatingPostResolve": "import { HookRequestWithInput, HookRequestWithResponse } from 'generated/fireboom.hooks'\nimport { Injected$HOOK_NAME$Input, $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function mutatingPostResolve(hook: HookRequestWithInput<Injected$HOOK_NAME$Input> & HookRequestWithResponse<$HOOK_NAME$Response>)\n  //: Promise<$HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n\treturn hook.response\n}"
+    },
+    "WithoutInput": {
+      "mockResolve": "import { HookRequest } from 'generated/fireboom.hooks'\nimport { $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function mockResolve(hook: HookRequest)\n  //: Promise<$HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n}",
+      "preResolve": "import { HookRequest } from 'generated/fireboom.hooks'\n\nexport default async function preResolve(hook: HookRequest) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
+      "postResolve": "import { HookRequest, HookRequestWithResponse } from 'generated/fireboom.hooks'\nimport { $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function postResolve(hook: HookRequest & HookRequestWithResponse<$HOOK_NAME$Response>) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
+      "customResolve": "import { HookRequest } from 'generated/fireboom.hooks'\nimport { $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function customResolve(hook: HookRequest)\n  //: Promise<void | $HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n}",
+      "mutatingPostResolve": "import { HookRequest, HookRequestWithResponse } from 'generated/fireboom.hooks'\nimport { $HOOK_NAME$Response } from 'generated/models'\n\nexport default async function mutatingPostResolve(hook: HookRequest & HookRequestWithResponse<$HOOK_NAME$Response>)\n  //: Promise<$HOOK_NAME$Response>{ // 取消注释以使用严格的返回类型\n  : Promise<any>{\n\t// TODO: 在此处添加代码\n\treturn hook.response\n}"
+    }
+  },
+  "custom": "import { GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql';\n\nexport default new GraphQLSchema({\n  query: new GraphQLObjectType({\n    name: 'Query',\n    fields: {\n      hello: {\n        type: GraphQLString,\n        resolve() {\n          return 'world';\n        },\n      },\n    },\n  }),\n})"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>视图</title>
+    <g id="视图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+        <path d="M-1.22020402,7.74961579 L1.45928671,4.5813372 C1.60194212,4.41265886 1.854328,4.39156309 2.02300635,4.5342185 C2.03999577,4.54858687 2.05575668,4.56434778 2.07012505,4.5813372 L4.74961579,7.74961579 L4.74961579,7.74961579" id="路径" stroke="#E92E5E" stroke-width="0.6" stroke-linecap="round" transform="translate(1.764706, 5.984910) scale(-1, 1) rotate(90.000000) translate(-1.764706, -5.984910) "></path>
+        <path d="M7.25038421,7.74961579 L9.92987495,4.5813372 C10.0725304,4.41265886 10.3249162,4.39156309 10.4935946,4.5342185 C10.510584,4.54858687 10.5263449,4.56434778 10.5407133,4.5813372 L13.220204,7.74961579 L13.220204,7.74961579" id="路径" stroke="#E92E5E" stroke-width="0.6" stroke-linecap="round" transform="translate(10.235294, 5.984910) rotate(90.000000) translate(-10.235294, -5.984910) "></path>
+        <circle id="椭圆形" fill="#E92E5E" cx="6.5" cy="8.5" r="1"></circle>
+        <line x1="6.49493281" y1="3.44813523" x2="4.66385467" y2="8.59948042" id="路径-77" stroke="#E92E5E" stroke-width="0.6" stroke-linecap="round"></line>
+    </g>
+</svg>

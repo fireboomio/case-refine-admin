@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>照片</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="11" rx="0.5"></rect>
+    </defs>
+    <g id="照片" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+        <g id="路径-51-+-椭圆形-蒙版" transform="translate(0.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="蒙版" fill="#D2E3FF" xlink:href="#path-1"></use>
+            <polygon id="路径-51" fill="#649FFF" mask="url(#mask-2)" points="-1.87742444e-07 6.33737378 3.9111193 3.44404929 8.52250003 7.42369089 10.5166556 5.43387009 14 7.75603448 14 11 -1.87742447e-07 11"></polygon>
+            <circle id="椭圆形" fill="#FF6B6B" mask="url(#mask-2)" cx="11" cy="3" r="1"></circle>
+        </g>
+    </g>
+</svg>

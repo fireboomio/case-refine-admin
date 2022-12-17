@@ -1,0 +1,5 @@
+mutation DisconnectOneRoleMenu($roleCode: String!, $menuId: Int!) {
+    data: local_my_updateOneRole(where: {code: $roleCode}, data: {Menu: {disconnect: {id: $menuId}}}) {
+      id
+    }
+  }

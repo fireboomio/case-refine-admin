@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>删除</title>
+    <g id="删除" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#F21212" cx="6" cy="6" r="6"></circle>
+        <line x1="6" y1="2.65021638" x2="6" y2="9.31287088" id="路径-53" stroke="#FFFFFF" stroke-linecap="round" transform="translate(6.000000, 5.981544) rotate(-45.000000) translate(-6.000000, -5.981544) "></line>
+        <line x1="6" y1="2.65021638" x2="6" y2="9.31287088" id="路径-53" stroke="#FFFFFF" stroke-linecap="round" transform="translate(6.000000, 5.981544) scale(-1, 1) rotate(-45.000000) translate(-6.000000, -5.981544) "></line>
+    </g>
+</svg>

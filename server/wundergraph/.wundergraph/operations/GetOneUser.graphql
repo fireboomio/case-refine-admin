@@ -1,0 +1,8 @@
+query GetOneUser($providerId: String!, $providerUserId: String!) {
+    data: local_my_findFirstUser(
+      where: { providerId: {equals: $providerId}, providerUserId: {equals: $providerUserId }}
+    ) {
+      name
+      id
+    }
+  }

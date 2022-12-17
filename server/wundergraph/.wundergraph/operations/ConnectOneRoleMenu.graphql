@@ -1,0 +1,5 @@
+mutation ConnectOneRoleMenu($roleCode: String!, $menuId: Int!) {
+    data: local_my_updateOneRole(data: {Menu: {connect: {id: $menuId}}}, where: {code: $roleCode}) {
+      id
+    }
+  }

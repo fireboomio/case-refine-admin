@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>钩子状态选择</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FDFEFF" offset="0%"></stop>
+            <stop stop-color="#ECF8F4" offset="72.397175%"></stop>
+            <stop stop-color="#D7F0E6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="钩子状态选择" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="url(#linearGradient-1)" cx="6.5" cy="6.5" r="6.5"></circle>
+        <path d="M5.45068142,4.45200152 L7.46993933,6.96139741 C7.55926588,7.07240635 7.55818574,7.23093257 7.46735481,7.34071398 L5.45068142,9.7781355 L5.45068142,9.7781355" id="路径-32" stroke="#56897A" stroke-linecap="round" transform="translate(6.537042, 7.115069) rotate(90.000000) translate(-6.537042, -7.115069) "></path>
+    </g>
+</svg>

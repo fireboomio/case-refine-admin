@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>核心日志</title>
+    <g id="核心日志" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-4">
+            <rect id="矩形" fill="#B26EF4" x="0" y="0" width="12" height="12" rx="1.6"></rect>
+            <path d="M6,2.5 C6.96649831,2.5 7.84149831,2.89175084 8.47487373,3.52512627 C9.10824916,4.15850169 9.5,5.03350169 9.5,6 C9.5,6.96649831 9.10824916,7.84149831 8.47487373,8.47487373 C7.84149831,9.10824916 6.96649831,9.5 6,9.5 C5.03350169,9.5 4.15850169,9.10824916 3.52512627,8.47487373 C2.89175084,7.84149831 2.5,6.96649831 2.5,6 C2.5,5.03350169 2.89175084,4.15850169 3.52512627,3.52512627 C4.15850169,2.89175084 5.03350169,2.5 6,2.5 Z" id="椭圆形" stroke="#FFFFFF"></path>
+        </g>
+        <line x1="6" y1="2.78638129" x2="6" y2="4.39930577" id="路径-72" stroke="#FFFFFF" stroke-linecap="round"></line>
+        <line x1="8.52654282" y1="5.19353776" x2="8.52654282" y2="6.80646224" id="路径-72" stroke="#FFFFFF" stroke-linecap="round" transform="translate(8.526543, 6.000000) rotate(-90.000000) translate(-8.526543, -6.000000) "></line>
+        <line x1="3.52654282" y1="5.19353776" x2="3.52654282" y2="6.80646224" id="路径-72" stroke="#FFFFFF" stroke-linecap="round" transform="translate(3.526543, 6.000000) rotate(-90.000000) translate(-3.526543, -6.000000) "></line>
+        <line x1="6" y1="7.78638129" x2="6" y2="9.39930577" id="路径-72" stroke="#FFFFFF" stroke-linecap="round"></line>
+    </g>
+</svg>

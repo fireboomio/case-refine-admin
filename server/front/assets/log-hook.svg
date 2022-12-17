@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>钩子日志</title>
+    <g id="钩子日志" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#4F8EFC" x="0" y="0" width="12" height="12" rx="1.6"></rect>
+        <path d="M9.04578346,4.38200337 C9.06882693,4.5525068 9.08072926,4.72656948 9.08072926,4.90342631 C9.08072926,7.02293408 7.37127104,8.74113461 5.26254745,8.74113461 C4.01867321,8.74113461 2.91372233,8.14329115 2.21660401,7.21788867 C2.85102816,7.50300818 3.55356324,7.66142144 4.29290947,7.66142144 C6.4557029,7.66142144 8.30349407,6.30583917 9.04114241,4.3938816 Z" id="形状结合" fill="#FFFFFF" transform="translate(5.648569, 6.561387) rotate(79.000000) translate(-5.648569, -6.561387) "></path>
+        <rect id="矩形" fill="#FFFFFF" x="2.18181818" y="2.72727273" width="7.63636364" height="1.70564813" rx="0.64"></rect>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+mutation DisconnectOneUserRole($userId: Int!, $roleCode: String!) {
+    data: local_my_updateOneUser(where: {id: $userId}, data: {Role: {disconnect: {code: $roleCode}}}) {
+      id
+    }
+  }

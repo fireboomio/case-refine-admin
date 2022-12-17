@@ -1,0 +1,7 @@
+mutation CreateOneMenu($label: String!, $level: Int, $sort: Int, $path: String!) {
+  data: local_my_createOneMenu(
+    data: {label: $label, path: $path, sort: $sort, level: $level, icon: ""}
+  ) {
+    id
+  }
+}

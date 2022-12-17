@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>文件夹</title>
+    <defs>
+        <path d="M0.5,0 L2.68910116,0 C2.83606467,1.95047846e-16 2.97558602,0.0646556557 3.07058768,0.176784853 L4.20499785,1.51571404 C4.29999952,1.62784323 4.43952087,1.69249889 4.58648438,1.69249889 L11.5,1.69249889 C11.7761424,1.69249889 12,1.91635652 12,2.19249889 L12,8 L12,8 L0,8 L0,0.5 C-3.38176876e-17,0.223857625 0.223857625,5.07265313e-17 0.5,0 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="3" width="12" height="1"></rect>
+        <filter x="-25.0%" y="-300.0%" width="150.0%" height="700.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.852439991   0 0 0 0 0.340781079   0 0 0 0 0.0118574923  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="46.6947535%" y1="100%" x2="46.6947535%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#FFB047" offset="0%"></stop>
+            <stop stop-color="#FFC157" offset="19.4630549%"></stop>
+            <stop stop-color="#FFCB60" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="文件夹" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="14" height="14"></rect>
+        <g id="编组-3" transform="translate(1.000000, 2.000000)">
+            <g id="矩形">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#FF8F47" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FF8F47" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+            <rect id="矩形" fill="url(#linearGradient-5)" x="0" y="3" width="12" height="8" rx="0.5"></rect>
+        </g>
+    </g>
+</svg>

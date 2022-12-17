@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切换</title>
+    <g id="切换" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" stroke="#787D8B" stroke-width="0.2" fill="#FFFFFF" x="0.1" y="0.1" width="13.8" height="13.8" rx="2"></rect>
+        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="2" y="2" width="10" height="10"></rect>
+        <g id="编组-9" transform="translate(7.813477, 3.093559)" stroke="#5F6269">
+            <path d="M0,0 C1.72936924,0.0443649438 2.70109957,0.881286455 2.91519099,2.51076453" id="路径-76" stroke-width="0.6" stroke-linecap="round"></path>
+            <path d="" id="三角形" fill="#D8D8D8" transform="translate(2.896874, 2.848755) scale(1, -1) translate(-2.896874, -2.848755) "></path>
+        </g>
+        <g id="编组-9" transform="translate(4.300790, 9.267936) scale(-1, -1) translate(-4.300790, -9.267936) translate(2.421892, 7.535873)" stroke="#5F6269">
+            <path d="M0,0 C1.72936924,0.0443649438 2.70109957,0.881286455 2.91519099,2.51076453" id="路径-76" stroke-width="0.6" stroke-linecap="round"></path>
+            <path d="" id="三角形" fill="#D8D8D8" transform="translate(2.939789, 2.906441) scale(1, -1) translate(-2.939789, -2.906441) "></path>
+        </g>
+        <rect id="矩形" stroke="#5F6269" stroke-width="0.6" x="3.3" y="3.3" width="3.4" height="3.4" rx="0.400000006"></rect>
+        <rect id="矩形" stroke="#5F6269" stroke-width="0.6" x="7.3" y="7.3" width="3.4" height="3.4" rx="0.400000006"></rect>
+    </g>
+</svg>

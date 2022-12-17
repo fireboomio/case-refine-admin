@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="54px" viewBox="0 0 39 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>变更</title>
+    <defs>
+        <linearGradient x1="0%" y1="87.3963262%" x2="100%" y2="1.94156094%" id="linearGradient-1">
+            <stop stop-color="#FBA54A" offset="0%"></stop>
+            <stop stop-color="#FEC748" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.55670124e-13%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.846864073" offset="0%"></stop>
+            <stop stop-color="#FEDF97" offset="84.58552%"></stop>
+            <stop stop-color="#FEC748" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-22.2%" y="-100.0%" width="144.4%" height="300.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-284.000000, -18.000000)">
+            <g id="变更" transform="translate(287.000000, 18.000000)">
+                <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="33.66" height="33" rx="10"></rect>
+                <path d="M23,18 C24.1045695,18 25,18.8954305 25,20 L25,23 C25,24.1045695 24.1045695,25 23,25 L20,25 C18.8954305,25 18,24.1045695 18,23 L18,20 C18,18.8954305 18.8954305,18 20,18 L23,18 Z M9,16 C9.27614237,16 9.5,16.2238576 9.5,16.5 C9.5,19.4700239 11.3667978,22.0867498 14.113409,23.0827633 C14.8715015,23.3576731 15.6756326,23.5 16.5,23.5 C16.7761424,23.5 17,23.7238576 17,24 C17,24.2761424 16.7761424,24.5 16.5,24.5 C15.5589559,24.5 14.639491,24.3372597 13.7724986,24.0228591 C10.6333146,22.8844855 8.5,19.8941779 8.5,16.5 C8.5,16.2238576 8.72385763,16 9,16 Z M16.5,8.5 C20.918278,8.5 24.5,12.081722 24.5,16.5 C24.5,16.7761424 24.2761424,17 24,17 C23.7238576,17 23.5,16.7761424 23.5,16.5 C23.5,12.6340068 20.3659932,9.5 16.5,9.5 C16.2238576,9.5 16,9.27614237 16,9 C16,8.72385763 16.2238576,8.5 16.5,8.5 Z M13,8 C14.1045695,8 15,8.8954305 15,10 L15,13 C15,14.1045695 14.1045695,15 13,15 L10,15 C8.8954305,15 8,14.1045695 8,13 L8,10 C8,8.8954305 8.8954305,8 10,8 L13,8 Z" id="形状结合" fill="url(#linearGradient-2)"></path>
+                <ellipse id="椭圆形" fill="#FBAB49" opacity="0.333031064" filter="url(#filter-3)" cx="16.5" cy="45" rx="13.5" ry="3"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
