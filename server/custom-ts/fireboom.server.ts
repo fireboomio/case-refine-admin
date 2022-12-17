@@ -5,13 +5,12 @@ import type {HooksConfig} from './generated/fireboom.hooks';
 import type {InternalClient} from './generated/fireboom.internal.client';
 
   import postAuthentication from './auth/postAuthentication'; 
- import mutatingPostAuthentication from './auth/mutatingPostAuthentication'; 
   import GetMenuList_preResolve from './operations/GetMenuList/preResolve'; 
   
 
 export default configureWunderGraphServer<HooksConfig, InternalClient, {}>(() => ({
    hooks:{  authentication: {
-				 postAuthentication, mutatingPostAuthentication,
+				 postAuthentication,
             }, queries:{GetMenuList :{  preResolve:GetMenuList_preResolve, },},mutations:{}, },  graphqlServers: [{
 			apiNamespace: "gql",
 			serverName: "gql",

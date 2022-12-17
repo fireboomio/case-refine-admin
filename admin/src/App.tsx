@@ -45,7 +45,13 @@ function App() {
     return <div>loading..</div>
   }
 
-  const resources: ResourceProps[] = []
+  const resources: ResourceProps[] = [
+    {
+      name: 'Dashboard',
+      options: { label: '控制台' },
+      list: () => <DashboardPage />
+    }
+  ]
   const routeMap: Record<number, string> = {}
   for (const menu of menus) {
     if (!routeMap[menu.id]) {
@@ -115,10 +121,6 @@ function App() {
         routerProvider={{
           ...routerProvider,
           routes: [
-            {
-              path: '/dashboard',
-              element: <DashboardPage />
-            },
             {
               path: '/oidc/callback',
               element: <CallbackPage />,
