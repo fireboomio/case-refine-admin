@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 // import vitePluginImp from 'vite-plugin-imp'
 import WindiCSS from 'vite-plugin-windicss'
 
-const serverHost= process.env.SERVER_HOST || 'localhost'
+const serverHost = process.env.SERVER_HOST || '127.0.0.1'
 
 export default defineConfig({
   server: {
