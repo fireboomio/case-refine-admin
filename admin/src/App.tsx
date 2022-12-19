@@ -16,6 +16,7 @@ import { MenuList } from './features/identity/menu'
 import { ApiList } from './features/identity/permission'
 import { PetCreate, PetEdit, PetList, PetShow } from './features/pet'
 import DashboardPage from './features/dashboard'
+import InternalSystemError from './features/system/500'
 
 const allResources = {
   User: {
@@ -127,7 +128,7 @@ function App() {
             },
             {
               path: '/500',
-              element: <Result status="500" title="500" subTitle="Sorry, something went wrong." />,
+              element: <InternalSystemError />,
             },
           ],
         }}
