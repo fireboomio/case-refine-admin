@@ -1,5 +1,5 @@
 import { Refine, ResourceProps } from '@pankod/refine-core'
-import { notificationProvider, Layout, ReadyPage, ErrorComponent } from '@pankod/refine-antd'
+import { notificationProvider, Layout, ReadyPage, ErrorComponent, Result } from '@pankod/refine-antd'
 
 import '@pankod/refine-antd/dist/styles.min.css'
 // import 'antd/es/style/variable.less'
@@ -124,6 +124,10 @@ function App() {
             {
               path: '/oidc/callback',
               element: <CallbackPage />,
+            },
+            {
+              path: '/500',
+              element: <Result status="500" title="500" subTitle="Sorry, something went wrong." />,
             },
           ],
         }}
