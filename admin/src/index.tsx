@@ -1,5 +1,5 @@
 import { AuthenticationProvider } from './providers/AuthenticationContext'
-import React from 'react'
+// import React from 'react'
 import { createRoot } from 'react-dom/client'
 // import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'

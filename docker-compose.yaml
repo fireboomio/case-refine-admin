@@ -1,0 +1,49 @@
+version: "3"
+services:
+  db:
+    image: mariadb
+    container_name: fireboom_mysql
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./db:/var/lib/mysql
+  # storage:
+  #   image: bitnami/minio
+  #   env_file: .env
+  #   restart: unless-stopped
+  #   ports:
+  #     - 9001:9001
+  #   volumes:
+  #     - ./storage:/data
+  server:
+    build: ./server
+    container_name: fireboom_server
+    # env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./server/custom-ts:/app/custom-ts
+      - ./server/log:/app/log
+      - ./server/store:/app/store
+      - ./server/upload:/app/upload
+      - ./server/wundergraph:/app/wundergraph
+    ports:
+      - 9991:9991
+      - 9123:9123
+  # hook:
+  #   build:
+  #     context: ./server
+  #     dockerfile: hooks.Dockerfile
+  #   container_name: fireboom_hooks
+  #   # env_file: .env
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./server/custom-ts:/app
+  #   ports:
+  #     - 9992:9992
+  admin:
+    build: ./admin
+    container_name: fireboom_admin
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - 9993:80

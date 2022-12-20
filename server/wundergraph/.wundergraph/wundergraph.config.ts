@@ -27,7 +27,7 @@ configureWunderGraphApplication({
     application: myApplication,
     server,
     operations,
-    authentication:{} ,
+    
     authorization: {roles:["admin","user"]} ,
     s3UploadProvider:[],
     cors: {        ...cors.allowAll, allowedOrigins:["localhost:9123"],allowedMethods:["GET","POST"],allowedHeaders:["*"],exposedHeaders:["*"],maxAge:120,allowCredentials:true },

@@ -14,6 +14,7 @@ export default configureWunderGraphServer<HooksConfig, InternalClient, {}>(() =>
             }, queries:{GetMenuList :{  preResolve:GetMenuList_preResolve, },},mutations:{}, },  graphqlServers: [{
 			apiNamespace: "gql",
 			serverName: "gql",
+			enableGraphQLEndpoint:true,
 			schema: new GraphQLSchema({
 				query: new GraphQLObjectType({
 					name: 'RootQueryType',
