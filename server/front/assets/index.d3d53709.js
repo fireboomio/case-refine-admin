@@ -1,1 +1,0 @@
-import{r as e,a as t}from"./index.64257940.js";import{W as a}from"./workbenchContext.4d536977.js";function i(){const{setFullscreen:r}=e.exports.useContext(a);return e.exports.useEffect(()=>{r(!0)},[]),t("iframe",{title:"rapi",src:"/#/rapi-frame?url=/api/v1/file/postToSwag",width:"100%",height:"100%",className:"border-none"})}export{i as default};
