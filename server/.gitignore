@@ -6,6 +6,7 @@
 *.exe
 main
 *wdg.txt
+server/front
 
 node_modules
 generated/

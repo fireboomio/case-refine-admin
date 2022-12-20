@@ -5,7 +5,7 @@
 
 
 function get_os_name() {
-  if [ "$(uname)" == "Darwin" ]; then
+  if [ "$(uname -s)" == "Darwin" ]; then
     os_name="mac"
   elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then   
     os_name="linux"
@@ -15,11 +15,20 @@ function get_os_name() {
 }
 
 get_os_name
+cpu_arch=$(uname -m)
 
 function get_os_bin_name() {
   ctl_filename="$1-${os_name}"
-  if [ os_name == 'windows' ]; then
-    ctl_filename="${ctl_filename}.exe"
+  if [ $os_name == 'windows' ]; then
+    if [ $cpu_arch == 'arm64' ]; then
+      ctl_filename="${ctl_filename}-${arch}.exe"
+    else
+      ctl_filename="${ctl_filename}.exe"
+    fi
+  else
+    if [ $cpu_arch == 'arm64' ]; then
+      ctl_filename="${ctl_filename}-${cpu_arch}"
+    fi
   fi
 }
 
@@ -43,6 +52,7 @@ function download_wunderctl() {
 function download_fireboom() {
   get_os_bin_name fireboom
   bin_url="https://fireboom-test.oss-cn-hangzhou.aliyuncs.com/fireboom/bin/${ctl_filename}"
+  echo $bin_url
   curl -o fireboom $bin_url
   chmod +x fireboom
 }
