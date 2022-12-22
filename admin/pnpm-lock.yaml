@@ -7,6 +7,7 @@ specifiers:
   '@testing-library/jest-dom': ^5.12.0
   '@testing-library/react': ^11.2.6
   '@testing-library/user-event': ^12.8.3
+  '@types/echarts': ^4.9.16
   '@types/jest': ^26.0.23
   '@types/node': ^18.11.17
   '@types/react': ^18.0.26
@@ -41,6 +42,7 @@ dependencies:
   web-vitals: 3.1.0
 
 devDependencies:
+  '@types/echarts': 4.9.16
   '@types/node': 18.11.17
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.9
@@ -932,6 +934,12 @@ packages:
     resolution: {integrity: sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig==}
     dev: false
 
+  /@types/echarts/4.9.16:
+    resolution: {integrity: sha512-bfiagfPw3dWauAIJ9fgoJQoL4hLWlGcltqwbE6LGye0NIY5xnbZau+mDmadCzGojic3MWuFDCUiO25kl4sRGeA==}
+    dependencies:
+      '@types/zrender': 4.0.3
+    dev: true
+
   /@types/hast/2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
@@ -1007,6 +1015,10 @@ packages:
     dependencies:
       '@types/yargs-parser': 21.0.0
     dev: false
+
+  /@types/zrender/4.0.3:
+    resolution: {integrity: sha512-EPI269lkHNsObwILJ1k1z7znLjKyePuWRy/XKK0shSGpBb9cIX307arcwJV4+2NeZj5wEjN06r4D8yFv7sI06g==}
+    dev: true
 
   /@umijs/route-utils/2.2.2:
     resolution: {integrity: sha512-cMk6qizy0pfpiwpVCvNQB0BKBUJEH33pDv5q5k2tSleSDw2abkJkTu2Kd5hKzoESLuFK43oGeOfcplZqm2bRxw==}
