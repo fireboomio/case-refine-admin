@@ -1,0 +1,11 @@
+mutation CreateOnePet($name: String!, $age: Int!, $sex: Int!, $createdAt: DateTime @injectCurrentDateTime(format: UnixDate)) {
+  data: local_my_createOnePet(
+    data: {name: $name, age: $age, sex: $sex, createdAt: $createdAt}
+  ) {
+    id
+    name
+    age
+    sex
+    createdAt
+  }
+}

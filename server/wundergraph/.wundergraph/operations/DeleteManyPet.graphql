@@ -1,0 +1,5 @@
+mutation DeleteManyPet($ids: [Int]!) {
+  data: local_my_deleteManyPet(where: {id: {in: $ids}}) {
+    count
+  }
+}

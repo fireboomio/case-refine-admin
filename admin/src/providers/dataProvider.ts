@@ -88,7 +88,7 @@ function parseOperatorToGraphQuery(operator: LogicalFilter) {
   }
 }
 
-export const OperationDataProvider = (apiUrl: string = '/app/main/operations'): DataProvider => {
+export const OperationDataProvider = (apiUrl: string = '/operations'): DataProvider => {
   const client = axios.create({
     baseURL: apiUrl, paramsSerializer: {
       serialize(params) {

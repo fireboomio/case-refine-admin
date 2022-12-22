@@ -1,0 +1,19 @@
+query GetPetList($take: Int = 10, $skip: Int = 0, $orderBy: [local_my_PetOrderByWithRelationInput], $query: local_my_PetWhereInput) {
+  data: local_my_findManyPet(
+    skip: $skip
+    take: $take
+  orderBy: $orderBy
+    where: {AND: $query}) {
+    
+    id
+    name
+    age
+    sex
+    createdAt
+  }
+  total: local_my_aggregatePet(where: {AND: $query}) @transform(get: "_count.id") {
+    _count {
+      id
+    }
+  }
+}

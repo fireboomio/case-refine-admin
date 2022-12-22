@@ -1,0 +1,10 @@
+query GetOnePet($id: Int!) {
+  data: local_my_findFirstPet(where: {id: {equals: $id}}) {
+    
+    id
+    name
+    age
+    sex
+    createdAt
+  }
+}

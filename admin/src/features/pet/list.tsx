@@ -46,7 +46,7 @@ export const PetList = () => {
         <Filter formProps={searchFormProps} />
       </Card>
       <List
-        pageHeaderProps={{
+        headerProps={{
           title: <CreateButton type="primary" />,
           extra: <Space>
             <ImportButton {...importProps} />

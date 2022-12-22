@@ -1,0 +1,13 @@
+mutation UpdateOnePet($id: Int!, $name: String, $age: Int, $sex: Int) {
+  data: local_my_updateOnePet(
+    data: {name: {set: $name}, age: {set: $age}, sex: {set: $sex}}
+    where: {id: $id}
+  ) {
+    
+    id
+    name
+    age
+    sex
+    createdAt
+  }
+}

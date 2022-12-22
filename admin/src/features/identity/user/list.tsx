@@ -49,7 +49,7 @@ export const UserList = () => {
           />
         </Table>
       </List>
-      <Drawer title={`${bindingUser?.name} - 角色管理`} visible={!!bindingUser} onClose={onCloseDrawer} width={520}>
+      <Drawer title={`${bindingUser?.name} - 角色管理`} open={!!bindingUser} onClose={onCloseDrawer} width={520}>
         {bindingUser && <UserRoleBind userId={bindingUser?.id} onClose={onCloseDrawer} />}
       </Drawer>
     </Space>

@@ -10,7 +10,7 @@ export const PetShow = () => {
   const record = data?.data as IPet
 
   return (
-    <Show isLoading={isLoading} pageHeaderProps={{ extra: <RefreshButton /> }}>
+    <Show isLoading={isLoading} headerProps={{ extra: <RefreshButton /> }}>
       <Title level={5}>名称</Title>
       <Text>{record?.name}</Text>
 

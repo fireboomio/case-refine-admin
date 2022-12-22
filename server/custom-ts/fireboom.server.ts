@@ -10,7 +10,7 @@ import type {InternalClient} from './generated/fireboom.internal.client';
 export default configureWunderGraphServer<HooksConfig, InternalClient, {}>(() => ({
    hooks:{  authentication: {
 				 postAuthentication,
-            },  },  graphqlServers: [{
+            }, mutations:{},queries:{}, },  graphqlServers: [{
 			apiNamespace: "gql",
 			serverName: "gql",
 			enableGraphQLEndpoint:true,

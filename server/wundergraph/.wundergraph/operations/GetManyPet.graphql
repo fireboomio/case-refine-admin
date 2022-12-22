@@ -1,0 +1,10 @@
+query GetManyPet {
+  data: local_my_findManyPet {
+    
+    id
+    name
+    age
+    sex
+    createdAt
+  }
+}
