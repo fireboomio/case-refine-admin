@@ -165,5 +165,59 @@ export default configureWunderGraphOperations<OperationsConfiguration>({
 		
 		
 	}, 
+			}), CreateOnePet : (config :any)  => ({
+				...config,
+				 
+			}), DeleteOnePet : (config :any)  => ({
+				...config,
+				 
+			}), UpdateOnePet : (config :any)  => ({
+				...config,
+				 
+			}), GetPetList : (config :any) => ({
+				...config,
+				 
+				caching:{
+		...config.caching,
+		
+		
+		
+	}, 
+				liveQuery:{
+		...config.liveQuery,
+		
+		
+	}, 
+			}), GetOnePet : (config :any) => ({
+				...config,
+				 
+				caching:{
+		...config.caching,
+		
+		
+		
+	}, 
+				liveQuery:{
+		...config.liveQuery,
+		
+		
+	}, 
+			}), DeleteManyPet : (config :any)  => ({
+				...config,
+				 
+			}), GetManyPet : (config :any) => ({
+				...config,
+				 
+				caching:{
+		...config.caching,
+		
+		
+		
+	}, 
+				liveQuery:{
+		...config.liveQuery,
+		
+		
+	}, 
 			}),  }, },
 });
