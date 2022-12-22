@@ -4,7 +4,7 @@ generator db {
 
 datasource db {
     provider = "mysql"
-    url      = "mysql://root:root123456@127.0.0.1:33060/fb-todolist"
+    url      = "mysql://root@127.0.0.1:33060/fb-todolist"
 }
 
 model todo {

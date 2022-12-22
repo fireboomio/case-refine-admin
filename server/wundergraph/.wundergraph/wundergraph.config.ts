@@ -13,7 +13,7 @@ import operations from './wundergraph.operations';
 
 
 const db_local_my_0 = introspect.mysql({
-						databaseURL:"mysql://root:root123456@127.0.0.1:33060/fireboom-refine",apiNamespace:"local_my" 
+						databaseURL:"mysql://root@127.0.0.1:33060/fireboom-refine",apiNamespace:"local_my" 
 					}); 
 
 
