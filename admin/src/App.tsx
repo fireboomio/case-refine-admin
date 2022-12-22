@@ -1,7 +1,8 @@
 import { Refine, ResourceProps } from '@pankod/refine-core'
 import { notificationProvider, Layout, ReadyPage, ErrorComponent } from '@pankod/refine-antd'
 
-import '@pankod/refine-antd/dist/styles.min.css'
+// import '@pankod/refine-antd/dist/styles.min.css'
+import "@pankod/refine-antd/dist/reset.css";
 // import 'antd/es/style/variable.less'
 import routerProvider from '@pankod/refine-react-router-v6'
 import AntConfigProvider from './providers/AntConfigProvider'
