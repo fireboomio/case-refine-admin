@@ -25,9 +25,13 @@ const Chart = ({ loading = false, className, options }: EChartsProps) => {
     const resizeHandler = () => {
       chartRef.current?.resize()
     }
-    window.addEventListener('resize', resizeHandler)
+    const observer = new ResizeObserver(() => {
+      resizeHandler()
+    })
+    observer.observe(containerRef.current!)
     return () => {
-      window.removeEventListener('resize', resizeHandler)
+      observer.unobserve(containerRef.current!)
+      observer.disconnect()
       chartRef.current?.dispose()
     }
   }, [])

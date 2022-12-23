@@ -30,10 +30,10 @@ function generateVisitLogs() {
   const start = new Date('2019-10-01')
   const end = new Date('2021-02-14')
   const ret = []
-  // 每天3-5个记录
+  // 每天记录
   let date = start
   while(date < end) {
-    const count = Math.round(Math.random() * 2) + 3
+    const count = Math.round(Math.random() * 200) + 30
     for (let i = 0; i < count; i++) {
       // @ts-ignore
       ret.push({
@@ -70,7 +70,7 @@ function generateSaleLogs() {
         ret.push({
           shopName: shop,
           day: new Date(date),
-          sales: Math.random() * 1000 + 345,
+          sales: Math.random() * 10000 + 123,
           typeId: type.id,
         })
       }      

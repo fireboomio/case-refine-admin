@@ -1,15 +1,20 @@
 import ECharts from "@/components/ECharts"
+import { useCustom } from "@pankod/refine-core"
 import { Card } from "antd"
 
-interface SaleTypePercentProps {
-  
+type SaleType = {
+  typeId: number
+  typeName: string
+  totalSales: number
 }
 
-const SaleTypePercent = ({  }: SaleTypePercentProps) => {
+const SaleTypePercent = () => {
+  const { data, isLoading } = useCustom({ url: 'GetSaleTypePercent', method: 'get' })
+  const _data = (data?.data ?? []) as SaleType[]
 
   return (
     <Card title="销售额类别占比">
-      <ECharts className="h-60" options={{
+      <ECharts className="h-60" loading={isLoading} options={{
           tooltip: {
             trigger: 'item'
           },
@@ -19,7 +24,6 @@ const SaleTypePercent = ({  }: SaleTypePercentProps) => {
           },
           series: [
             {
-              name: 'Access From',
               type: 'pie',
               radius: ['40%', '70%'],
               avoidLabelOverlap: false,
@@ -42,13 +46,10 @@ const SaleTypePercent = ({  }: SaleTypePercentProps) => {
               labelLine: {
                 show: false
               },
-              data: [
-                { value: 1048, name: 'Search Engine' },
-                { value: 735, name: 'Direct' },
-                { value: 580, name: 'Email' },
-                { value: 484, name: 'Union Ads' },
-                { value: 300, name: 'Video Ads' }
-              ]
+              data: _data.map(item => ({
+                name: item.typeName,
+                value: item.totalSales
+              }))
             }
           ]
       }} />
